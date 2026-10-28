@@ -1,0 +1,6 @@
+{
+  "benchmark_id": "synthetic_text_intent",
+  "networked_execution": false,
+  "offline_default": true,
+  "schema_version": "1"
+}

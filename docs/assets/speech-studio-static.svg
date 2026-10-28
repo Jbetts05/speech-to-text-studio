@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-labelledby="studio-title studio-description">
+  <title id="studio-title">From audio to transcription evidence</title>
+  <desc id="studio-description">Static illustration. An original audio file and matching TXT reference form a fixed dataset. One coordinator supports up to five concurrent lanes for new runs: Azure Speech fast, gpt-transcribe, managed whisper, MAI-Transcribe-1.5 and MAI-Transcribe-2. Historical runs remain serial. References are used for evaluation, not sent to providers. Five metric families remain separate; exactly-once calls are not guaranteed.</desc>
+  <style>
+    text { font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; fill: #172033; }
+    .heading { font-size: 36px; font-weight: 650; }
+    .body { font-size: 20px; fill: #596579; }
+    .label { font-size: 22px; font-weight: 600; }
+    .mono { font-family: Consolas, "Courier New", Courier, monospace; font-size: 20px; }
+    .sender { font-size: 20px; font-weight: 600; fill: #0f5cc0; }
+  </style>
+  <defs>
+    <marker id="studio-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="m2 1 6 4-6 4" fill="none" stroke="#0f5cc0" stroke-width="1.5"/></marker>
+    <path id="studio-wave" d="M68 260h16l7-14 9 30 10-54 10 76 11-48 10 20 10-36 11 49 10-68 11 80 10-43 10 15 10-24 10 38 10-56 10 46 8-21h22"/>
+  </defs>
+  <rect id="studio-canvas" x="1" y="1" width="998" height="478" rx="12" fill="#f5f7fa" stroke="#dfe4eb"/>
+  <text x="40" y="66" class="heading" data-box="studio-canvas" data-inset="24">From audio to evidence</text>
+  <text x="40" y="108" class="body" data-box="studio-canvas" data-inset="24">Audio goes to models. References stay with evaluation.</text>
+  <rect id="studio-input" x="40" y="174" width="316" height="184" rx="10" fill="#fff" stroke="#bec7d3"/>
+  <text x="64" y="214" class="label" data-box="studio-input" data-inset="16">Audio + reference</text>
+  <g transform="translate(0 66) scale(1 .75)"><use href="#studio-wave" fill="none" stroke="#0f5cc0" stroke-width="2.5" stroke-linecap="round"/></g>
+  <text x="64" y="331" class="mono" data-box="studio-input" data-inset="16">sample.wav + sample.txt</text>
+  <path d="M368 264h36" fill="none" stroke="#0f5cc0" stroke-width="2" marker-end="url(#studio-arrow)"/>
+  <text x="420" y="146" class="sender" data-box="studio-canvas" data-inset="24">One coordinator; up to 5 lanes</text>
+  <rect id="studio-model-1" x="420" y="166" width="540" height="48" rx="7" fill="#fff" stroke="#bec7d3"/>
+  <text x="442" y="199" class="label" data-box="studio-model-1" data-inset="8">Azure Speech fast</text>
+  <rect id="studio-model-2" x="420" y="218" width="540" height="48" rx="7" fill="#fff" stroke="#bec7d3"/>
+  <text x="442" y="251" class="label" data-box="studio-model-2" data-inset="8">gpt-transcribe</text>
+  <rect id="studio-model-3" x="420" y="270" width="540" height="48" rx="7" fill="#fff" stroke="#bec7d3"/>
+  <text x="442" y="303" class="label" data-box="studio-model-3" data-inset="8">Managed whisper</text>
+  <rect id="studio-model-4" x="420" y="322" width="540" height="48" rx="7" fill="#fff" stroke="#bec7d3"/>
+  <text x="442" y="355" class="label" data-box="studio-model-4" data-inset="8">MAI-Transcribe-1.5</text>
+  <rect id="studio-model-5" x="420" y="374" width="540" height="48" rx="7" fill="#fff" stroke="#bec7d3"/>
+  <text x="442" y="407" class="label" data-box="studio-model-5" data-inset="8">MAI-Transcribe-2</text>
+  <text x="40" y="405" class="body" data-box="studio-canvas" data-inset="24">Pinned inputs.</text>
+  <text x="40" y="435" class="body" data-box="studio-canvas" data-inset="24">Traceable attempts.</text>
+  <text x="420" y="453" class="body" data-box="studio-canvas" data-inset="16">Five metric families. No universal score.</text>
+</svg>

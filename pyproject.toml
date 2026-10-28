@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-bench-template"
+version = "0.1.0"
+description = "A generic, evidence-first AI benchmark platform"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.121.3,<1",
+  "pydantic>=2.10,<3",
+  "starlette>=0.49.1,<1",
+  "typer>=0.15,<1",
+  "uvicorn>=0.34,<1",
+]
+
+[project.optional-dependencies]
+speech = [
+  "azure-identity>=1.19,<2",
+  "httpx>=0.28.1,<1",
+  "soundfile>=0.13.1,<0.14",
+]
+azure = [
+  "azure-data-tables>=12.5,<13",
+  "azure-identity>=1.19,<2",
+  "azure-storage-blob>=12.24,<13",
+  "azure-storage-queue>=12.12,<13",
+]
+
+[project.scripts]
+ai-bench = "ai_bench.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ai_bench", "benchmark_packs"]
+
+[tool.hatch.build]
+exclude = [
+  "**/*.flac", "**/*.wav", "**/*.mp3", "**/*.tar", "**/*.gz", "**/*.tgz", "**/*.zip",
+  "**/*.7z", "**/*.bz2", "**/*.xz", "**/*.trans.txt",
+  "**/inventory.json", "**/selection.json", "**/publication.json", "**/samples.json",
+  "**/provider-config*.json", "**/speech-provider-config*.json", "**/external-manifest.json",
+  "**/external-data/**", "**/dataset-cache/**", "**/LibriSpeech/**",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests", "benchmark_packs"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.ruff.format]
+line-ending = "lf"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src", "benchmark_packs", "tests", "infra/scripts", "scripts"]
+plugins = ["pydantic.mypy"]
+exclude = ["benchmark_packs/[^/]+/scaffold_pack.py"]
+
+[[tool.mypy.overrides]]
+module = ["uvicorn", "soundfile"]
+ignore_missing_imports = true

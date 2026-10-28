@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="730" viewBox="0 0 600 730" role="img" aria-labelledby="studio-mobile-title studio-mobile-description">
+  <title id="studio-mobile-title">Five managed transcription options</title>
+  <desc id="studio-mobile-description">Static illustration. A matching original audio and TXT pair feeds one coordinator with up to five concurrent lanes for new runs. Its five options are Azure Speech fast, gpt-transcribe, managed whisper, MAI-Transcribe-1.5 and MAI-Transcribe-2. Historical runs remain serial. Metric families stay separate; this is not live telemetry or an exactly-once guarantee.</desc>
+  <style>
+    text { font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; fill: #172033; }
+    .heading { font-size: 36px; font-weight: 650; }
+    .body { font-size: 26px; fill: #596579; }
+    .label { font-size: 26px; font-weight: 600; }
+    .mono { font-family: Consolas, "Courier New", Courier, monospace; font-size: 24px; }
+    .sender { font-size: 26px; font-weight: 600; fill: #0f5cc0; }
+  </style>
+  <defs><path id="studio-mobile-wave" d="M48 200h26l10-16 12 32 12-44 12 55 12-37 12 24 12-42 12 54 12-31 12 13h30"/></defs>
+  <rect id="studio-mobile-canvas" x="1" y="1" width="598" height="728" rx="12" fill="#f5f7fa" stroke="#dfe4eb"/>
+  <text x="24" y="63" class="heading" data-box="studio-mobile-canvas" data-inset="20">From audio to evidence</text>
+  <text x="24" y="107" class="body" data-box="studio-mobile-canvas" data-inset="20">Only audio is sent to providers.</text>
+  <rect id="studio-mobile-input" x="24" y="126" width="552" height="124" rx="10" fill="#fff" stroke="#bec7d3"/>
+  <text x="48" y="168" class="label" data-box="studio-mobile-input" data-inset="12">Audio + matching TXT</text>
+  <use href="#studio-mobile-wave" y="10" fill="none" stroke="#0f5cc0" stroke-width="3" stroke-linecap="round"/>
+  <text x="322" y="209" class="mono" data-box="studio-mobile-input" data-inset="12">FLAC/WAV/MP3</text>
+  <text x="24" y="294" class="sender" data-box="studio-mobile-canvas" data-inset="20">One coordinator; up to 5 lanes</text>
+  <rect id="studio-mobile-model-1" x="24" y="315" width="552" height="56" rx="7" fill="#fff" stroke="#bec7d3"/>
+  <text x="48" y="352" class="label" data-box="studio-mobile-model-1" data-inset="8">Azure Speech fast</text>
+  <rect id="studio-mobile-model-2" x="24" y="379" width="552" height="56" rx="7" fill="#fff" stroke="#bec7d3"/>
+  <text x="48" y="416" class="label" data-box="studio-mobile-model-2" data-inset="8">gpt-transcribe</text>
+  <rect id="studio-mobile-model-3" x="24" y="443" width="552" height="56" rx="7" fill="#fff" stroke="#bec7d3"/>
+  <text x="48" y="480" class="label" data-box="studio-mobile-model-3" data-inset="8">Managed whisper</text>
+  <rect id="studio-mobile-model-4" x="24" y="507" width="552" height="56" rx="7" fill="#fff" stroke="#bec7d3"/>
+  <text x="48" y="544" class="label" data-box="studio-mobile-model-4" data-inset="8">MAI-Transcribe-1.5</text>
+  <rect id="studio-mobile-model-5" x="24" y="571" width="552" height="56" rx="7" fill="#fff" stroke="#bec7d3"/>
+  <text x="48" y="608" class="label" data-box="studio-mobile-model-5" data-inset="8">MAI-Transcribe-2</text>
+  <text x="24" y="668" class="body" data-box="studio-mobile-canvas" data-inset="20">Five separate metric families.</text>
+  <text x="24" y="704" class="body" data-box="studio-mobile-canvas" data-inset="16">No universal score.</text>
+</svg>

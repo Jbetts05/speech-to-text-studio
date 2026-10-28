@@ -1,0 +1,27 @@
+.results-scroll { max-width: 100%; max-height: min(70vh, 720px); overflow: auto; border: 1px solid var(--cp-border); }
+.results-table { border-collapse: separate; border-spacing: 0; table-layout: fixed; width: max-content; min-width: 100%; font-size: 12px; }
+.results-table th, .results-table td { width: 150px; min-width: 150px; max-width: 150px; padding: 9px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--cp-border); overflow-wrap: anywhere; }
+.results-table th { position: sticky; top: 0; z-index: 1; background: var(--cp-surface-soft); font-size: 11px; }
+.results-table th button, .result-link { border: 0; padding: 0; color: var(--cp-text); background: transparent; font: inherit; text-align: left; cursor: pointer; }
+.results-table th button { font-weight: 600; }
+.results-table td small { display: block; color: var(--cp-text-muted); }
+.results-table [data-sticky-track] { position: sticky; left: 0; width: 146px; min-width: 146px; max-width: 146px; overflow: hidden; background: var(--cp-surface); z-index: 2; box-shadow: 1px 0 0 var(--cp-border); }
+.results-table th[data-sticky-track] { z-index: 3; background: var(--cp-surface); }
+.result-link { display: block; max-width: 100%; color: var(--cp-accent); overflow-wrap: anywhere; }
+.metric-help { display: inline-block; vertical-align: top; margin-left: 6px; font-weight: 400; text-transform: none; letter-spacing: normal; }
+.metric-help summary { cursor: pointer; color: var(--cp-accent); padding: 2px 5px; }
+.metric-help p { max-width: 220px; white-space: normal; overflow-wrap: anywhere; line-height: 1.5; }
+.result-cost-details { margin-top: 4px; font-size: 11px; }
+.result-cost-details summary { cursor: pointer; color: var(--cp-text-muted); }
+.result-drilldown { min-width: 0; border-top: 2px solid var(--cp-accent); padding-top: 12px; }
+.result-drilldown > .section-title-row { margin-bottom: 12px; }
+.operational-disclosure > summary { padding: 16px 0; cursor: pointer; font-weight: 600; }
+.usage-context { color: var(--cp-text-muted); font-size: 12px; }
+.usage-context summary { cursor: pointer; padding: 8px 0; }
+.cost-service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 12px; margin: 16px 0; padding: 0; list-style: none; }
+.cost-service-list li { border-top: 1px solid var(--cp-border); padding-top: 10px; min-width: 0; overflow-wrap: anywhere; }
+.cost-service-list h4 { margin: 0 0 8px; }
+.cost-samples summary { padding: 8px 0; cursor: pointer; }
+@media (max-width: 640px) {
+  .results-table [data-sticky-track] { width: 100px; min-width: 100px; max-width: 100px; }
+}

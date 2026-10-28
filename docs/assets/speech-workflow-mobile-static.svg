@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="768" viewBox="0 0 600 768" role="img" aria-labelledby="workflow-mobile-title workflow-mobile-description">
+  <title id="workflow-mobile-title">Select, validate, run and inspect</title>
+  <desc id="workflow-mobile-description">Static workflow. Select matching English audio and text, validate and hash before atomic publication, choose solutions and approve calls, then play, compare and download the evidence. Retries retain earlier evidence and revisions stay immutable.</desc>
+  <style>
+    text { font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; fill: #172033; }
+    .heading { font-size: 36px; font-weight: 650; }
+    .body { font-size: 26px; fill: #596579; }
+    .label { font-size: 30px; font-weight: 600; }
+  </style>
+  <rect id="workflow-mobile-canvas" x="1" y="1" width="598" height="766" rx="12" fill="#f5f7fa" stroke="#dfe4eb"/>
+  <text x="24" y="64" class="heading" data-box="workflow-mobile-canvas" data-inset="20">From files to evidence</text>
+  <text x="24" y="109" class="body" data-box="workflow-mobile-canvas" data-inset="20">Validate first. Publish completely.</text>
+  <g fill="none" stroke="#0f5cc0" stroke-width="2"><path d="M300 242v20m-5-6 5 6 5-6"/><path d="M300 374v20m-5-6 5 6 5-6"/><path d="M300 506v20m-5-6 5 6 5-6"/></g>
+  <rect id="workflow-mobile-select" x="24" y="130" width="552" height="112" rx="8" fill="#fff" stroke="#bec7d3"/>
+  <text x="48" y="176" class="label" data-box="workflow-mobile-select" data-inset="12">1  Select pairs</text>
+  <text x="48" y="220" class="body" data-box="workflow-mobile-select" data-inset="12">Up to 10 matching English pairs</text>
+  <rect id="workflow-mobile-validate" x="24" y="262" width="552" height="112" rx="8" fill="#fff" stroke="#bec7d3"/>
+  <text x="48" y="308" class="label" data-box="workflow-mobile-validate" data-inset="12">2  Validate</text>
+  <text x="48" y="352" class="body" data-box="workflow-mobile-validate" data-inset="12">Decode, hash, then publish</text>
+  <rect id="workflow-mobile-run" x="24" y="394" width="552" height="112" rx="8" fill="#fff" stroke="#bec7d3"/>
+  <text x="48" y="440" class="label" data-box="workflow-mobile-run" data-inset="12">3  Run</text>
+  <text x="48" y="484" class="body" data-box="workflow-mobile-run" data-inset="12">Choose solutions; approve calls</text>
+  <rect id="workflow-mobile-inspect" x="24" y="526" width="552" height="112" rx="8" fill="#fff" stroke="#bec7d3"/>
+  <text x="48" y="572" class="label" data-box="workflow-mobile-inspect" data-inset="12">4  Inspect</text>
+  <text x="48" y="616" class="body" data-box="workflow-mobile-inspect" data-inset="12">Play, compare and download</text>
+  <text x="24" y="683" class="body" data-box="workflow-mobile-canvas" data-inset="20">Retries retain earlier evidence.</text>
+  <text x="24" y="726" class="body" data-box="workflow-mobile-canvas" data-inset="20">Revisions are immutable.</text>
+</svg>

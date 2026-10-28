@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "existingResourceGroupName": {
+      "value": "${AI_BENCH_EXISTING_RESOURCE_GROUP}"
+    },
+    "authMode": {
+      "value": "${AI_BENCH_AUTH_MODE}"
+    },
+    "foundrySubscriptionId": {
+      "value": "${AI_BENCH_FOUNDRY_SUBSCRIPTION_ID}"
+    },
+    "foundryResourceGroupName": {
+      "value": "${AI_BENCH_FOUNDRY_RESOURCE_GROUP}"
+    },
+    "foundryAccountName": {
+      "value": "${AI_BENCH_FOUNDRY_ACCOUNT}"
+    },
+    "maiSubscriptionId": { "value": "${AI_BENCH_MAI_SUBSCRIPTION_ID}" },
+    "maiResourceGroupName": { "value": "${AI_BENCH_MAI_RESOURCE_GROUP}" },
+    "maiAccountName": { "value": "${AI_BENCH_MAI_ACCOUNT}" },
+    "gptTranscribeDeploymentName": { "value": "${AI_BENCH_GPT_TRANSCRIBE_DEPLOYMENT}" },
+    "whisperDeploymentName": { "value": "${AI_BENCH_WHISPER_DEPLOYMENT}" },
+    "speechEndpointKey": { "value": "${AI_BENCH_SPEECH_ENDPOINT_KEY}" },
+    "openaiEndpointKey": { "value": "${AI_BENCH_OPENAI_ENDPOINT_KEY}" },
+    "maiEndpointKey": { "value": "${AI_BENCH_MAI_ENDPOINT_KEY}" },
+    "scmAllowedCidr": { "value": "${AI_BENCH_SCM_ALLOWED_CIDR}" },
+    "publicDemoMode": { "value": "${AI_BENCH_PUBLIC_DEMO_MODE}" },
+    "enableProviderPublicAccess": { "value": "${AI_BENCH_ENABLE_PROVIDER_PUBLIC_ACCESS}" },
+    "providerAccountSnapshotsBase64": { "value": "${AI_BENCH_PROVIDER_ACCOUNT_SNAPSHOTS}" },
+    "backendConformanceAttestation": { "value": "${AI_BENCH_BACKEND_CONFORMANCE_RECEIPT}" },
+    "keyVaultName": { "value": "${AI_BENCH_KEY_VAULT_NAME}" },
+    "storageAccountName": { "value": "${AI_BENCH_STORAGE_ACCOUNT}" },
+    "executionNamespace": { "value": "${AI_BENCH_AZURE_NAMESPACE}" },
+    "appServiceSku": {
+      "value": "${AI_BENCH_APP_SERVICE_SKU}"
+    },
+    "enableAppPublicAccess": {
+      "value": "${AI_BENCH_ENABLE_APP_PUBLIC_ACCESS}"
+    },
+    "allowNetworkedSolutions": {
+      "value": "${AI_BENCH_ALLOW_NETWORKED_SOLUTIONS}"
+    },
+    "ingressAllowedCidr": {
+      "value": "${AI_BENCH_INGRESS_ALLOWED_CIDR}"
+    },
+    "enableMonitoringPublicAccess": {
+      "value": "${AI_BENCH_ENABLE_MONITORING_PUBLIC_ACCESS}"
+    },
+    "preserveExistingAppSettings": {
+      "value": "${AI_BENCH_PRESERVE_EXISTING_APP_SETTINGS}"
+    }
+  }
+}

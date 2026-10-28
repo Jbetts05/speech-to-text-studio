@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img" aria-labelledby="workflow-title workflow-description">
+  <title id="workflow-title">From matching files to immutable evidence</title>
+  <desc id="workflow-description">Select up to ten matching English audio and TXT pairs. Validate media and hashes, then publish the complete revision atomically. Choose solutions and explicitly authorize provider calls. Play, compare and download evidence. Retries retain earlier attempts. Motion is illustrative; the complete workflow is visible when animation is disabled.</desc>
+  <style>
+    text { font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif; fill: #172033; }
+    .heading { font-size: 34px; font-weight: 650; }
+    .body { font-size: 20px; fill: #596579; }
+    .label { font-size: 26px; font-weight: 600; }
+    .progress { opacity: 0; animation: workflow-stage 1.25s linear 1; }
+    .stage-2 { animation-delay: 1.25s; }
+    .stage-3 { animation-delay: 2.5s; }
+    .stage-4 { animation-delay: 3.75s; }
+    @keyframes workflow-stage { 0%, 75% { opacity: 1; } 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .motion { animation: none; opacity: 0; } }
+  </style>
+  <defs><marker id="workflow-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m2 1 6 4-6 4" fill="none" stroke="#0f5cc0" stroke-width="1.5"/></marker></defs>
+  <rect id="workflow-canvas" x="1" y="1" width="998" height="338" rx="12" fill="#f5f7fa" stroke="#dfe4eb"/>
+  <text x="40" y="65" class="heading" data-box="workflow-canvas" data-inset="24">Upload once. Inspect every attempt.</text>
+  <text x="40" y="106" class="body" data-box="workflow-canvas" data-inset="24">Complete validation before publication. Evidence before summaries.</text>
+  <g fill="none" stroke="#0f5cc0" stroke-width="2" marker-end="url(#workflow-arrow)">
+    <path d="M256 196h16"/><path d="M492 196h16"/><path d="M728 196h16"/>
+  </g>
+  <rect id="workflow-select" x="40" y="130" width="212" height="132" rx="8" fill="#fff" stroke="#bec7d3"/>
+  <rect x="40" y="130" width="212" height="132" rx="8" fill="#0f5cc0" fill-opacity=".08" stroke="#0f5cc0" stroke-width="2" class="motion progress"/>
+  <text x="58" y="172" class="label" data-box="workflow-select" data-inset="12">1  Select</text>
+  <text x="58" y="206" class="body" data-box="workflow-select" data-inset="12">Audio + TXT</text>
+  <text x="58" y="238" class="body" data-box="workflow-select" data-inset="12">Up to 10 pairs</text>
+  <rect id="workflow-validate" x="276" y="130" width="212" height="132" rx="8" fill="#fff" stroke="#bec7d3"/>
+  <rect x="276" y="130" width="212" height="132" rx="8" fill="#0f5cc0" fill-opacity=".08" stroke="#0f5cc0" stroke-width="2" class="motion progress stage-2"/>
+  <text x="294" y="172" class="label" data-box="workflow-validate" data-inset="12">2  Validate</text>
+  <text x="294" y="206" class="body" data-box="workflow-validate" data-inset="12">Decode + hash</text>
+  <text x="294" y="238" class="body" data-box="workflow-validate" data-inset="12">Publish atomically</text>
+  <rect id="workflow-run" x="512" y="130" width="212" height="132" rx="8" fill="#fff" stroke="#bec7d3"/>
+  <rect x="512" y="130" width="212" height="132" rx="8" fill="#0f5cc0" fill-opacity=".08" stroke="#0f5cc0" stroke-width="2" class="motion progress stage-3"/>
+  <text x="530" y="172" class="label" data-box="workflow-run" data-inset="12">3  Run</text>
+  <text x="530" y="206" class="body" data-box="workflow-run" data-inset="12">Choose solutions</text>
+  <text x="530" y="238" class="body" data-box="workflow-run" data-inset="12">Approve calls</text>
+  <rect id="workflow-inspect" x="748" y="130" width="212" height="132" rx="8" fill="#fff" stroke="#bec7d3"/>
+  <rect x="748" y="130" width="212" height="132" rx="8" fill="#0f5cc0" fill-opacity=".08" stroke="#0f5cc0" stroke-width="2" class="motion progress stage-4"/>
+  <text x="766" y="172" class="label" data-box="workflow-inspect" data-inset="12">4  Inspect</text>
+  <text x="766" y="206" class="body" data-box="workflow-inspect" data-inset="12">Play + compare</text>
+  <text x="766" y="238" class="body" data-box="workflow-inspect" data-inset="12">Download evidence</text>
+  <text x="40" y="302" class="body" data-box="workflow-canvas" data-inset="16">Retries keep earlier evidence. Published revisions stay immutable.</text>
+</svg>

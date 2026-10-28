@@ -1,0 +1,64 @@
+.service-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  background: var(--cp-surface);
+}
+
+.service-list > li {
+  border-bottom: 1px solid var(--cp-border);
+}
+
+.solution-options .service-list {
+  margin: 0;
+}
+
+.service-list > li:first-child {
+  border-top: 1px solid var(--cp-border);
+}
+
+.service-list .service-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 48px;
+  padding: 14px 12px;
+}
+
+.service-list label.service-row {
+  cursor: pointer;
+}
+
+.service-list input {
+  flex: 0 0 auto;
+  margin: 3px 0 0;
+  accent-color: var(--cp-accent);
+}
+
+.service-list label.service-row:hover,
+.service-list .service-selected {
+  background: var(--cp-accent-soft);
+}
+
+.service-list .service-row:focus-within {
+  outline: 2px solid var(--cp-accent);
+  outline-offset: -2px;
+}
+
+.service-list .service-copy {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.service-list .service-copy strong {
+  font-size: 14px;
+}
+
+.service-list .service-note,
+.service-usage-note {
+  color: var(--cp-text-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}

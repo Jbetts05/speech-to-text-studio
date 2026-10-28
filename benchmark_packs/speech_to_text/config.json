@@ -1,0 +1,6 @@
+{
+  "schema_version": "1",
+  "benchmark_id": "speech_to_text",
+  "offline_default": false,
+  "networked_execution": true
+}

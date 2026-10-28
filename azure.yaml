@@ -1,0 +1,31 @@
+name: ai-bench
+metadata:
+  template: ai-bench-template@0.1.0
+
+infra:
+  provider: bicep
+  path: infra
+
+services:
+  app:
+    project: ./infra/package
+    language: python
+    host: appservice
+
+hooks:
+  preprovision:
+    shell: pwsh
+    run: python -m infra.scripts.prepare_environment --require-provider-network-review
+    interactive: true
+  postprovision:
+    shell: pwsh
+    run: python -m infra.scripts.sync_auth_mode
+    interactive: true
+  prepackage:
+    shell: pwsh
+    run: python -m infra.scripts.stage_package
+    interactive: false
+  postdeploy:
+    shell: pwsh
+    run: python -m infra.scripts.verify_deployment --bootstrap
+    interactive: true
