@@ -20,7 +20,7 @@ dependencies = [
 speech = [
   "azure-identity>=1.19,<2",
   "httpx>=0.28.1,<1",
-  "soundfile>=0.13.1,<0.14",
+  "soundfile>=0.13.1,<0.15",
 ]
 azure = [
   "azure-data-tables>=12.5,<13",
